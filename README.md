@@ -403,4 +403,4 @@ def numip():
 
 ### Ну вообщем бота убили одним плагином, всем спасибо и пока
 
-# **Сайт** - [kenyka.fun](https://kenyka.fun/fsbot)
+# **Сайт** - [kenyka.fun](https://kenyka.fun)
