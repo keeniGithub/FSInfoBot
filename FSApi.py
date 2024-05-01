@@ -1,6 +1,7 @@
 from mcstatus import server
 from mcstatus import JavaServer
 import re
+import SqlAPI
 
 server = JavaServer.lookup("grid.forscore.info")
 
@@ -38,6 +39,21 @@ def player_list():
         return "Сервер Оффлайн."
     else:
         return all_names 
+    
+def player_list_full(cycle_num):
+    unique_players = set()
+    final_result = []
+
+    if player_list() == "Сервер Оффлайн.":
+        return "Сервер Оффлайн."
+    else:
+        for i in range(cycle_num):
+            players = player_list()
+            unique_players.update(players)
+
+            final_result = list(unique_players)
+            
+        return final_result
 
 def ip():
     return "grid.forscore.info"
@@ -62,3 +78,4 @@ def check_player(player):
         for p in players:
             if p.name == player:
                 return True      
+            
