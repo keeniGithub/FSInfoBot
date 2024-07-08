@@ -4,10 +4,9 @@ import mc
 import time
 import telebot
 from telebot import types
+import config
 
-token = ""
-
-bot = telebot.TeleBot(token)
+bot = telebot.TeleBot(config.TOKEN_TG)
 
 @bot.message_handler(commands=['start'])
 def start(message):
