@@ -9,10 +9,6 @@ import threading
 import asyncio
 
 intents = disnake.Intents.default()
-intents.presences = True
-intents.messages = True
-intents.reactions = True
-intents.voice_states = True
 
 bot = commands.Bot(command_prefix=None, intents=intents)
 
