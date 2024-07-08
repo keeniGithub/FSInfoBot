@@ -38,18 +38,10 @@ $ pip install mcstatus
 
 ### Поскольку данный бот просто собирает информацию по IP его можно изменить и использовать для другого сервера
 
-#### FSApi.py
+#### config.py
 
 ```python
-# 6 строчка
-server = JavaServer.lookup("grid.forscore.info") # вот тут изменить IP на свой
-```
-
-#### SqlAPI.py
-
-```python
-# 6 строчка
-server = JavaServer.lookup("grid.forscore.info") # и тут тоже
+ip = "grid.forscore.info"
 ```
 
 # Структура файлов
