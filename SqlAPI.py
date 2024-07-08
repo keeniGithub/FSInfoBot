@@ -2,8 +2,9 @@ import sqlite3
 from mcstatus import server
 from mcstatus import JavaServer
 import datetime
+import config
 
-server = JavaServer.lookup("grid.forscore.info")
+server = JavaServer.lookup(config.ip)
 
 status = JavaServer.status(server)
 
