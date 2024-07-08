@@ -7,6 +7,7 @@ import mc
 import time
 import threading
 import asyncio
+import config
 
 intents = disnake.Intents.default()
 
@@ -144,6 +145,6 @@ async def on_ready():
     await bot.change_presence(activity=activity)
     print(f'Bot is ready')
 
-bot.run("")
+bot.run(config.TOKEN_DS)
 
 
